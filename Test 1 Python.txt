@@ -1,0 +1,16 @@
+>>> fw = open ('nadia1.txt', 'w')
+>>> fw.write('Name\t:\tNurul Nadia Idris\nMatrik\t:\t2014243398\nAge\t:\t27\n\HP No\t:\t013-4727861\n')
+>>> fw.close()
+>>> 
+>>> frb = open('nadia1.txt', 'rb')
+>>> txtB=frb.read()
+>>> print(txtB)
+Name	:	Nurul Nadia Idris
+Matrik	:	2014243398
+Age	:	27
+\HP No	:	013-4727861
+
+>>> 
+>>> 
+>>> with open('nadia1.txt','rb') as filein, open('nadia_Binary_Reverse.txt', 'wb') as fileout:
+	fileout.writelines(reversed(filein.readlines()))
